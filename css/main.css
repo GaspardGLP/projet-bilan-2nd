@@ -103,7 +103,7 @@ textarea {
   height: auto;
   margin: auto;
   background-color: Red;
-
+  border: 4mm ridge rgba(170, 50, 220, .6);
 }
 
 p
@@ -125,6 +125,7 @@ h1,h2
   background-color: green;
   display: flex;
   justify-content: space-around;
+  border: solid;
 }
 
 article
@@ -135,6 +136,7 @@ article
   margin-bottom: 15px;
   border-radius: 9px;
   background-color: purple;
+  border: solid;
 }
 
 .sectionFooter
@@ -143,7 +145,8 @@ article
   height:auto;
   margin: auto;
   margin-top: 25px;
-  background-color: blue;
+  background-color: grey;
+  border: solid;
 }
 
 .divImg
@@ -155,13 +158,14 @@ article
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
-  background-color: yellow;
+  background-color: Red;
+  border: solid;
 }
 
 img
 {
-  height: 245px;
-  width: auto;
+  height:auto;
+  width: 300px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -171,7 +175,7 @@ img
   width: 70%;
   height: auto;
   margin: auto;
-  background-color: Red;
+  background-color: blue;
 }
 
 
