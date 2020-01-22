@@ -104,6 +104,7 @@ textarea {
   margin: auto;
   background-color: Red;
   border: 4mm ridge rgba(170, 50, 220, .6);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 p
@@ -158,7 +159,7 @@ article
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
-  background-color: Red;
+  background-color: white;
   border: solid;
 }
 
@@ -168,6 +169,14 @@ img
   width: 300px;
   margin-top: 15px;
   margin-bottom: 15px;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover
+{
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 .articleBilan
@@ -178,6 +187,31 @@ img
   background-color: blue;
 }
 
+body
+{
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 4s;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+
+@-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
 
 /* ==========================================================================
    Helper classes
